@@ -1,4 +1,6 @@
-require('dotenv').config();
+require('dotenv').config();         // load .env (if not already)
+console.log('MONGO var =>', process.env.MONGO_URI); // debug output
+
 const express = require('express');
 const app = express();
 const http = require('http');
